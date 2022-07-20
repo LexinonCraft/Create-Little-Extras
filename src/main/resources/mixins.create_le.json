@@ -1,0 +1,11 @@
+{
+  "required": true,
+  "priority": 1101,
+  "package": "com.lexinonc.createLe.mixin",
+  "compatibilityLevel": "JAVA_16",
+  "refmap": "create_le.refmap.json",
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "minVersion": "0.8"
+}

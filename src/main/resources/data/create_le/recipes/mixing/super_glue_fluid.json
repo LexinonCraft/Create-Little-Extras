@@ -1,0 +1,18 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "minecraft:slime_ball"
+    },
+    {
+      "fluid": "minecraft:water",
+      "amount": 100
+    }
+  ],
+  "results": [
+    {
+      "fluid": "create_le:super_glue",
+      "amount": 100
+    }
+  ]
+}

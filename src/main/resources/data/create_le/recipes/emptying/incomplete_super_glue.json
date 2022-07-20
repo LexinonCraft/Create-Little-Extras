@@ -1,0 +1,17 @@
+{
+  "type": "create:emptying",
+  "ingredients": [
+    {
+      "item": "create_le:incomplete_super_glue"
+    }
+  ],
+  "results": [
+    {
+      "item": "minecraft:nether_star"
+    },
+    {
+      "fluid": "create_le:super_glue",
+      "amount": 250
+    }
+  ]
+}

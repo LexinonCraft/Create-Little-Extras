@@ -1,0 +1,67 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "create:iron_sheet"
+  },
+  "transitionalItem": {
+    "item": "create_le:incomplete_super_glue"
+  },
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "create:iron_sheet"
+        },
+        {
+          "item": "create:shaft"
+        }
+      ],
+      "results": [
+        {
+          "item": "create_le:incomplete_super_glue"
+        }
+      ],
+      "keepHeldItem": true
+    },
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "create_le:incomplete_super_glue"
+        },
+        {
+          "fluid": "create_le:super_glue",
+          "amount": 150
+        }
+      ],
+      "results": [
+        {
+          "item": "create_le:incomplete_super_glue"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "create_le:incomplete_super_glue"
+        },
+        {
+          "item": "minecraft:iron_nugget"
+        }
+      ],
+      "results": [
+        {
+          "item": "create_le:incomplete_super_glue"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "item": "create:super_glue"
+    }
+  ],
+  "loops": 1
+}
