@@ -1,4 +1,5 @@
 {
   "fluid.create_le.super_glue": "Super Glue",
-  "item.create_le.incomplete_super_glue": "Incomplete Super Glue"
+  "item.create_le.incomplete_super_glue": "Incomplete Super Glue",
+  "itemGroup.create_le.main": "Create Little Extras"
 }

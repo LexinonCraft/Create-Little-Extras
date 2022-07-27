@@ -153,13 +153,16 @@ repositories {
     // flatDir {
     //     dir 'libs'
     // }
-    repositories {
-        maven {
-            url "https://cursemaven.com"
-            content {
-                includeGroup "curse.maven"
-            }
+    maven {
+        url "https://cursemaven.com"
+        content {
+            includeGroup "curse.maven"
         }
+    }
+    maven {
+        // Location of the maven for mixed mappings, Registrate, and Flywheel
+        name 'tterrag maven'
+        url 'https://maven.tterrag.com'
     }
 }
 
@@ -168,6 +171,16 @@ dependencies {
     // that the dep is a ForgeGradle 'patcher' dependency, and its patches will be applied.
     // The userdev artifact is a special name and will get all sorts of transformations applied to it.
     minecraft 'net.minecraftforge:forge:1.18.2-40.1.67'
+
+    /*jarJar(group: 'com.tterrag.registrate', name: 'Registrate', version: '[MC1.18.2-1.1.3,)') {
+        jarJar.pin(it, project.registrate_version)
+    }
+    // Uncomment once Forge fixes mixins for included jars
+    //jarJar(group: 'com.jozufozu.flywheel', name: "flywheel-forge-${flywheel_minecraft_version}", version: '[0.6.4,0.6.5)') {
+    //    jarJar.pin(it, project.flywheel_version)
+    //}
+
+    implementation fg.deobf("com.tterrag.registrate:Registrate:${registrate_version}")*/
 
     // Real mod deobf dependency examples - these get remapped to your current mappings
     // compileOnly fg.deobf("mezz.jei:jei-${mc_version}:${jei_version}:api") // Adds JEI API as a compile dependency

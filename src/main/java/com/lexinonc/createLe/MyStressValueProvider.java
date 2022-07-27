@@ -8,8 +8,8 @@ import org.jetbrains.annotations.Nullable;
 public class MyStressValueProvider implements BlockStressValues.IStressValueProvider {
     @Override
     public double getImpact(Block block) {
-        if(block == CreateLittleExtras.testBlock.get())
-            return 128;
+        /*if(block == CreateLittleExtras.testBlock.get())
+            return 128;*/
 
         return 0;
     }
@@ -21,7 +21,8 @@ public class MyStressValueProvider implements BlockStressValues.IStressValueProv
 
     @Override
     public boolean hasImpact(Block block) {
-        return block == CreateLittleExtras.testBlock.get();
+        //return block == CreateLittleExtras.testBlock.get();
+        return false;
     }
 
     @Override
